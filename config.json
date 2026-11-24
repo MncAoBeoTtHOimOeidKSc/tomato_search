@@ -1,0 +1,65 @@
+{
+  "observation_joints_deg": [
+    -0.636,
+    54.774,
+    -97.326,
+    2.314,
+    41.412,
+    0.339
+  ],
+  "travel_joints_deg": [0, 0, 0, 0, 0, 0],
+  "arm_base_in_base_link_xyz_m": [
+    0.15,
+    0.0,
+    0.439
+  ],
+  "arm_base_in_base_link_rpy_deg": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "handeye_path": "~/robot_project/VLM-to-Robot/00_Dual_Arm/calibration/results/T_ee_cam_high.npy",
+  "navigation_config": "~/vlm-jetson/config/navigation.json",
+  "approach_standoff_m": 0.69,
+  "record_max_age_s": 300,
+  "arm_speed_percent": 10,
+  "camera": {
+    "serial": "317622073937",
+    "width": 640,
+    "height": 480,
+    "fps": 30,
+    "min_depth_m": 0.15,
+    "max_depth_m": 2.5,
+    "warmup_frames": 30
+  },
+  "target": {
+    "name": "green_plant",
+    "min_area_px": 500,
+    "morphology_kernel": 5,
+    "mask_erode_px": 3,
+    "max_track_distance_px": 100,
+    "max_track_depth_m": 0.15,
+    "hsv_ranges": [
+      {
+        "lower": [
+          35,
+          55,
+          45
+        ],
+        "upper": [
+          90,
+          255,
+          255
+        ]
+      }
+    ]
+  },
+  "observation_pose_m_deg": [
+    0.112109,
+    0.001186,
+    0.585575,
+    17.166,
+    83.551,
+    18.172
+  ]
+}
